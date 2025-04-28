@@ -119,7 +119,7 @@ class RatingCreate(BaseModel):
 
 class RatingOut(BaseModel):
     id: int
-    users_id: int
+    user_id: int
     lesson_id : int
     stars: int = Field(..., ge=0, le=5)
 
